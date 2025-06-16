@@ -3,5 +3,5 @@
 </p>
 
 
-# DownloadYouTubeComment
+# Download YouTube Comment
 Download your favorite Comment from YouTube Extension
