@@ -1,0 +1,72 @@
+body {
+    width: 230px;
+    height: 340px;
+    background-color: #000000;
+    color: #ff0000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    text-align: center;
+    font-size: 16px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    color: #ff0000;
+}
+
+.nod {
+    color: #ff0000;
+}
+
+.v {
+    color: #ff0000;
+}
+
+.button-container {
+    display: grid;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+.help-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.settings-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.github-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.changelog-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
