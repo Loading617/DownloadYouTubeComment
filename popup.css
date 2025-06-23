@@ -32,9 +32,19 @@ body {
     row-gap: 8px;
 }
 
+.rate-button {
+    background-color: #ff0000;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .help-button {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     border: none;
     padding: 10px 20px;
@@ -44,7 +54,7 @@ body {
 
 .settings-button {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     border: none;
     padding: 10px 20px;
@@ -54,7 +64,7 @@ body {
 
 .github-button {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     border: none;
     padding: 10px 20px;
@@ -64,7 +74,7 @@ body {
 
 .changelog-button {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     border: none;
     padding: 10px 20px;
