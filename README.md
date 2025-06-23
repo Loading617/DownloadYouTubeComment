@@ -4,4 +4,4 @@
 
 
 # Download YouTube Comment
-Download your favorite Comment from YouTube Extension
+Download your favorite Comment from YouTube
