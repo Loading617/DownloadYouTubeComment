@@ -11,7 +11,7 @@ function addDownloadButtons() {
       const downloadBtn = document.createElement('button');
       downloadBtn.className = 'custom-download-btn';
       downloadBtn.style.marginLeft = '8px';
-      downloadBtn.innerText = '⬇️';
+      downloadBtn.innerText = '⬇';
       downloadBtn.title = 'Download comment';
 
       downloadBtn.onclick = () => {
