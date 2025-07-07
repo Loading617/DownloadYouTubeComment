@@ -1,34 +1,36 @@
-function addDownloadButtons() {
+function injectDownloadButtons() {
   const commentNodes = document.querySelectorAll('ytd-comment-thread-renderer');
 
   commentNodes.forEach(node => {
-    if (node.querySelector('.custom-download-btn')) return;
+    if (node.querySelector('.yt-comment-download-btn')) return;
 
     const commentText = node.querySelector('#content-text')?.innerText;
-    const actionPanel = node.querySelector('#action-buttons');
+    const menuButtonContainer = node.querySelector('#action-menu');
 
-    if (commentText && actionPanel) {
-      const downloadBtn = document.createElement('button');
-      downloadBtn.className = 'custom-download-btn';
-      downloadBtn.style.marginLeft = '8px';
-      downloadBtn.innerText = '⬇';
-      downloadBtn.title = 'Download comment';
+    if (commentText && menuButtonContainer) {
+      const btn = document.createElement('button');
+      btn.className = 'yt-comment-download-btn';
+      btn.title = 'Download this comment';
+      btn.textContent = '⬇';
+      btn.style.marginLeft = '6px';
+      btn.style.background = 'transparent';
+      btn.style.border = 'none';
+      btn.style.cursor = 'pointer';
+      btn.style.fontSize = '16px';
 
-      downloadBtn.onclick = () => {
+      btn.onclick = () => {
         const blob = new Blob([commentText], { type: 'text/plain' });
         const url = URL.createObjectURL(blob);
-
         const a = document.createElement('a');
         a.href = url;
         a.download = 'comment.txt';
         a.click();
-
         URL.revokeObjectURL(url);
       };
 
-      actionPanel.appendChild(downloadBtn);
+      menuButtonContainer.appendChild(btn);
     }
   });
 }
 
-setInterval(addDownloadButtons, 2000);
+setInterval(injectDownloadButtons, 2000);
