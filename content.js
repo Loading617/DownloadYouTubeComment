@@ -11,7 +11,7 @@ function injectDownloadButtons() {
       const btn = document.createElement('button');
       btn.className = 'yt-comment-download-btn';
       btn.title = 'Download this comment';
-      btn.textContent = '⬇';
+      btn.textContent = '⇊';
       btn.style.marginLeft = '6px';
       btn.style.background = 'transparent';
       btn.style.border = 'none';
