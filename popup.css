@@ -40,25 +40,7 @@ body {
     cursor: pointer;
 }
 
-.help-button {
-    background-color: #e70706;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
 .report-a-bug-button {
-    background-color: #e70706;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.settings-button {
     background-color: #e70706;
     color: #000;
     border: none;
