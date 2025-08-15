@@ -2,7 +2,7 @@ body {
     width: 500px;
     height: 500px;
     background-color: #000;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 'Open Sans';
     text-align: center;
     font-size: 18px;
 }
@@ -68,3 +68,4 @@ body {
     margin-right: 10px;
     cursor: pointer;
 }
+
