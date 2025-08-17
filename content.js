@@ -12,7 +12,6 @@ function injectDownloadButtons() {
       btn.className = 'yt-comment-download-btn';
       btn.title = 'Download this comment';
       btn.textContent = '⇊';
-      btn.style.color = '#e70706';
       btn.style.marginLeft = '6px';
       btn.style.background = 'transparent';
       btn.style.border = 'none';
@@ -35,4 +34,5 @@ function injectDownloadButtons() {
 }
 
 setInterval(injectDownloadButtons, 2000);
+
 
