@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Download YouTube Comment",
     "version": "1.0",
-    "description": "Downloads a Comment from YouTube.",
+    "description": "Download Comments from YouTube.",
     "homepage_url": "https://downloadyoutubecomment.com",
     "action": {
         "default_popup": "index.html"
@@ -29,4 +29,5 @@
             "js": ["content.js"]
         }
     ]
+
 }
