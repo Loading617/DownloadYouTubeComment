@@ -14,8 +14,10 @@
         "128": "icons/download_youtube_comment_128x128.png"
     },
     "permissions": [
-        "activeTab",
-        "storage"
+        "contextMenus",
+        "downloads",
+        "scripting",
+        "activeTab"
     ],
     "host_permissions": [
         "https://www.youtube.com/*"
@@ -31,3 +33,4 @@
     ]
 
 }
+
