@@ -5,9 +5,10 @@ function injectDownloadButtons() {
     if (node.querySelector('.yt-comment-download-btn')) return;
 
     const commentText = node.querySelector('#content-text')?.innerText;
+    const username = node.querySelector('#author-text span')?.innerText;
     const menuButtonContainer = node.querySelector('#action-menu');
 
-    if (commentText && menuButtonContainer) {
+    if (commentText && username && menuButtonContainer) {
       const btn = document.createElement('button');
       btn.className = 'yt-comment-download-btn';
       btn.title = 'Download this comment';
@@ -21,6 +22,16 @@ function injectDownloadButtons() {
       btn.style.fontSize = '16px';
 
       btn.onclick = () => {
+
+        const sanitize = str =>
+          str.replace(/[<>:"/\\|?*]+/g, '').replace(/\s+/g, ' ').trim();
+
+        const safeUser = sanitize(username);
+        const safeComment = sanitize(commentText).substring(0, 50);
+        const fileName = `${safeUser} - ${safeComment}.txt`;
+
+        const fileContent = `Username: ${username}\nComment: ${commentText}`;
+        
         const blob = new Blob([commentText], { type: 'text/plain' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -36,6 +47,7 @@ function injectDownloadButtons() {
 }
 
 setInterval(injectDownloadButtons, 2000);
+
 
 
 
