@@ -47,9 +47,3 @@ function injectDownloadButtons() {
 }
 
 setInterval(injectDownloadButtons, 2000);
-
-
-
-
-
-
