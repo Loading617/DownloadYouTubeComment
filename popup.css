@@ -35,32 +35,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     column-gap: 4px;
-    padding: 0 8px;
+    padding: 0 9px;
 }
 
-.report-a-bug-button {
+.button {
     background-color: #e70706;
     color: #000;
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.github-button {
-    background-color: #e70706;
-    color: #000;
+    border-radius: 4px;
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.changelog-button {
-    background-color: #e70706;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
     cursor: pointer;
 }
