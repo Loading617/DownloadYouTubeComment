@@ -34,11 +34,29 @@ body {
 .button-container {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 4px;
+    column-gap: 4px;
     padding: 0 8px;
 }
 
-.button {
+.report-a-bug-button {
+    background-color: #e70706;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.github-button {
+    background-color: #e70706;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.changelog-button {
     background-color: #e70706;
     color: #000;
     border: none;
