@@ -8,9 +8,10 @@ function downloadComment(user, comment) {
 
 chrome.downloads.download({
   url: URL.createObjectURL(
-    new Blob([comment], { type: 'text/plain' })
+    new Blob([comment], { type: 'description/plain' })
   ),
   filename: filename,
   saveAs: true
 });
+
 
