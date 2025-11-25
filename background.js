@@ -3,7 +3,7 @@ function sanitizeFile(name) {
 }
 
 function downloadComment(user, comment) {
-    const filename = sanitizeFilename(`${user} - ${comment}.txt`); 
+    const filename = sanitizeFilename(`${user} - ${comment}.description`); 
 }
 
 chrome.downloads.download({
@@ -13,3 +13,4 @@ chrome.downloads.download({
   filename: filename,
   saveAs: true
 });
+
