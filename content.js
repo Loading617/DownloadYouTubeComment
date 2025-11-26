@@ -28,7 +28,7 @@ function injectDownloadButtons() {
 
         const safeUser = sanitize(username);
         const safeComment = sanitize(commentText).substring(0, 50);
-        const fileName = `${safeUser} - ${safeComment}.txt`;
+        const fileName = `${safeUser} - ${safeComment}.description`;
 
         const fileContent = `Username: ${username}\nComment: ${commentText}`;
         
@@ -36,7 +36,7 @@ function injectDownloadButtons() {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'comment.txt';
+        a.download = 'comment.description';
         a.click();
         URL.revokeObjectURL(url);
       };
@@ -47,3 +47,4 @@ function injectDownloadButtons() {
 }
 
 setInterval(injectDownloadButtons, 2000);
+
